@@ -1,0 +1,19 @@
+# Raw source data — too large for git, download from Kaggle instead (see README)
+data/raw/zomato.csv
+
+# Cleaned/derived large CSVs — regenerable via scripts/01_clean_data.py and
+# scripts/03_prepare_bi_data.py; keep the repo lean, not a data lake
+data/cleaned/*.csv
+powerbi/*.csv
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+
+# Node artifacts (in case any local tooling reintroduces them)
+node_modules/
+package-lock.json
+
+# Word lock/temp files
+~$*.docx
+~WRL*.tmp
